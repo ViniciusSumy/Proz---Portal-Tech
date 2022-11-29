@@ -1,0 +1,18 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: inline-block;
+    float: inline-start;
+}
+
+#bonitinho div{
+    background-color: rgb(118, 118, 119);
+    text-decoration: none;
+}
