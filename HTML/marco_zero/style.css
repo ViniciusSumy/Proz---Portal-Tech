@@ -48,3 +48,23 @@ footer {
     background-color:antiquewhite;
     padding: 30px;
 }
+
+.main_title_h1 {
+    font-size: x-large;
+    padding: 20px;
+    margin-left: 10cm;
+}
+
+.main_h3 {
+    font-size: large;
+    font-weight:lighter;
+    padding: 10px;
+    margin-left: 1cm;
+    margin-right: 22cm;
+    text-align: justify;
+}
+
+.main_img {
+    padding: 10px;
+    margin-left: 5cm;
+}
