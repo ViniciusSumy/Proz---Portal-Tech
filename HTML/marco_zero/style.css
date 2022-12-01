@@ -10,7 +10,12 @@ header {
 }
 
 footer {
-    background-color: antiquewhite;
+    list-style: none;
+    padding: 0;
+    background-color:rgb(71, 62, 202);
+    font-size: large;
+    color: white;
+    
 }
 
 .title_style {
@@ -28,7 +33,8 @@ footer {
     list-style: none;
     padding: 0;
     background-color:rgb(71, 62, 202);
-    font-size: large;
+    font-size: larger;
+    font-weight: 700;
     
 }
 
@@ -67,4 +73,31 @@ footer {
 .main_img {
     padding: 10px;
     margin-left: 5cm;
+}
+
+footer h1 {
+    font-weight: 400;
+    font-size:large;
+    display: inline-block;
+    margin-left: 10cm;
+    text-align: center;
+}
+
+footer li {
+    font-weight: 300;
+    font-size: small;
+    display: inline-block;
+    color: rgb(202, 172, 0);
+    padding: 15px;
+    margin-left: 5cm;
+    
+}
+
+footer form {
+    border: 1px solid whitesmoke;
+    border-radius: 0.2em;
+    padding: 0.2cm;
+    font-weight: 300;
+    font-size: medium;
+    align-items: center;
 }
