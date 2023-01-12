@@ -1,0 +1,47 @@
+#main-header {
+    /* Configurações gerais do cabeçalho */
+    width: 20px; /* Largura do cabeçalho */
+    height: 100%; /* Altura do cabeçalho */
+    position: fixed; /* Mantém o cabeçalho na tela ao rolar */
+    top: 50%; /* Posiciona o cabeçalho no topo da página */
+    transform: translateY(-50%);
+    left: 0; /* Posiciona o cabeçalho na esquerda da página */
+    display: flex; /* Posiciona as seções verticalmente */
+    flex-direction: column; /* Posiciona as seções em coluna */
+    align-items: center; /* Centraliza as seções verticalmente */
+}
+
+.header-section {
+    /* Configurações das seções do cabeçalho */
+    display: flex; /* Posiciona o número no centro da seção */
+    align-items: center; /* Centraliza o número na seção */
+    justify-content: center; /* Centraliza o número horizontalmente */
+    width: 100%; /* Preenche a largura do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro das seções */
+    padding: 20px; /* Adiciona espaçamento interno */
+    padding-top: 50px;
+}
+
+div h1 {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+#red {
+    background-color: #007bff;
+}
+
+#yellow {
+    background-color: #3498db;
+}
+
+#green {
+    background-color: #00a8cc;
+}
+
+#blue {
+    background-color: #00bcd4;
+}
+
