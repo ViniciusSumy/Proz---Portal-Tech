@@ -9,10 +9,10 @@ Create table instrumentos(
 Create table Vendedor(
     id_Vendedor serial primary key,
     nome VARCHAR(36) NOT NULL,
-    Sobrenome VARCHAR(36) NOT NULL,
-    Vendas INT,
-    Salario FLOAT NOT NULL,
-    Comissao_vendas FLOAT);
+    sobrenome VARCHAR(36) NOT NULL,
+    vendas INT,
+    salario FLOAT NOT NULL,
+    comissao_vendas FLOAT NOT NULL);
 
 -- Inserção de Valores --
 
@@ -34,14 +34,14 @@ Select * from instrumentos where (promocao = true);
 
 Select * from instrumentos where (promocao = true);
 
-Select * from instrumentos where id_instrumento = 6 order by preco and nome ;
+Select * from instrumentos where id_instrumento = 6 order by preco and nome;
 
 Select * from instrumentos where nome ='violao' order by id_instrumento, preco and promocao ;
 
 insert into Vendedor(nome, Sobrenome, Vendas, salario, Comissao_vendas)
-		values("Andre", "Souza", 5,1800,50),
-              ("Marcos", "Vieira", 5,1800,50),
-              ('Paulo', 'Silva', 5,1800,50),
-              ('Maxuel', 'Andrade', 5,1800,50);
+		values("Andrei", "Moura", 2,2500,5),
+              ("Susana", "Silveira", 2,2500,5),
+              ('Marcos', 'Santos', 2,2500,5),
+              ('Murilo', 'Aparecida', 2,2500,5);
               
-Select	* from Vendedor;
+Select	* from vendedor;
