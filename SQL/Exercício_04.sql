@@ -1,33 +1,33 @@
-create database CineMundo;
+create database CursoDeProgramacao;
 
-Use CineMundo;
+Use CursoDeProgramacao;
 
-CREATE TABLE quiz (
-    id_game int AUTO_INCREMENT PRIMARY KEY,
-    nome_game Varchar(50) NOT NULL,
-    variacao_num int NOT NULL
+CREATE TABLE disciplinas (
+    id_disciplina int AUTO_INCREMENT PRIMARY KEY,
+    nome_disciplina Varchar(50) NOT NULL,
+    nome_professor Varchar(50) NOT NULL
 );
 
-CREATE TABLE resenhas (
-    id_resenha INT AUTO_INCREMENT PRIMARY KEY,
-    nome_resenha VARCHAR(50) NOT NULL,
-    genero_filme VARCHAR (20) NOT NULL,
-    nota_filme INT NOT NULL
-    CONSTRAINT FOREIGN KEY (game_id)
-        REFERENCES disciplinas (id_game)
+CREATE TABLE alunos (
+    id_alunos INT AUTO_INCREMENT PRIMARY KEY,
+    nome_alunos VARCHAR(50) NOT NULL,
+    disciplinas_id INT,
+    CONSTRAINT FOREIGN KEY (disciplinas_id)
+        REFERENCES disciplinas (id_disciplina)
 )
 
-insert into quiz(nome_game, variacao_num) values ('Avatar 2', 3);
-insert into quiz(nome_game, variacao_num) values ('Game of Thrones', 1);
-insert into quiz(nome_game, variacao_num) values ('Game of Thrones', 2);
-insert into quiz(nome_game, variacao_num) values ('Friends', 2);
+insert into disciplinas(nome_disciplina, nome_professor) values ('Banco de Dados', 'Maria Alves');
+insert into disciplinas(nome_disciplina, nome_professor) values ('Python', 'Pietro Souza');
+insert into disciplinas(nome_disciplina, nome_professor) values ('POO', 'Bia Tavares');
 
-insert into resenhas(nome_resenha, genero_filme, nota_filme) values ('Avatar 2: fenômeno ou flop?', 'AÇÃO', 10);
-insert into resenhas(nome_resenha, genero_filme, nota_filme) values ('Friends', 'COTIDIANO', 7);
-insert into resenhas(nome_resenha, genero_filme, nota_filme) values ('Jumanji 2', 'AÇÃO', 5);
-insert into resenhas(nome_resenha, genero_filme, nota_filme) values ('Game of Thrones', 'AVENTURA', 9.5);
+insert into alunos(nome_alunos, disciplinas_id) values ('Cleiton', 2);
+insert into alunos(nome_alunos, disciplinas_id) values ('Carol', null);
+insert into alunos(nome_alunos, disciplinas_id) values ('Ruan', 2);
+insert into alunos(nome_alunos, disciplinas_id) values ('Gabi', 1);
+insert into alunos(nome_alunos, disciplinas_id) values ('Rian', null);
+insert into alunos(nome_alunos, disciplinas_id) values ('Mia', 2);
+insert into alunos(nome_alunos, disciplinas_id) values ('Malu', 1);
 
-
-select nome_game, variacao_num from quiz
-inner join resenhas
-on quiz.id_game = quiz.game_id;
+select nome_alunos, nome_disciplina from alunos
+inner join disciplinas
+on disciplinas.id_disciplina = alunos.disciplinas_id;
