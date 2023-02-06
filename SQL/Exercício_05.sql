@@ -1,3 +1,5 @@
+--Exercício 05 (exercício 06 logo abaixo)
+
 -- -- Desenvolva um banco de dados e relacione tabelas através de chaves estrangeiras ou nomes de colunas iguais. Siga as instruções:
 -- crie uma base de dados; 
 -- crie tabelas nessa base de dados;
@@ -42,6 +44,7 @@ inner join resenhas
 on quiz.id_game = resenhas.game_id;
 
 
+-- Exercício 06
 -- Crie um banco de dados, adicione tabelas e determine quais são os atributos de cada uma. Em seguida, execute um trigger que se relacione com algum comando, como insert, select, delete ou update.
 
 
