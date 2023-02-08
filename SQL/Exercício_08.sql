@@ -36,7 +36,7 @@ CREATE TABLE multa (
   FOREIGN KEY (id_emprestimo) REFERENCES emprestimo(id)
 );
 
---------- INSERIR DADOS ---------
+--------- INSERT ---------
 
 INSERT INTO livro (id, titulo, autor)
 VALUES 
